@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-import HomePage from './pages/HomePage.js';
-import AboutMe from './pages/AboutMe';
-import Works from './pages/Works';
-import Contact from './pages/Contact';
-import Navbar from './modules/Navbar';
-import Footer from './modules/Footer';
+import HomePage from './screens/HomePage.js';
+import AboutMe from './screens/AboutMe';
+import Works from './screens/Works';
+import Contact from './screens/Contact';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 class Root extends Component
 {
@@ -15,8 +15,8 @@ class Root extends Component
   {
     super(props);
     this.state = {
-      page : <HomePage changePage = {this.changePage}/>,
-      navbar : <></>,
+      page : <AboutMe changePage = {this.changePage}/>,
+      navbar : <Navbar changePage = {this.changePage}/>,
     }
   }
 

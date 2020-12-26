@@ -1,8 +1,16 @@
 /* General */
+:root{
+  --main-bg-color : #101018;
+  --secondary-bg-color : #201525;
+  --text-color : #ffddee;
+  --text-secondary : #dd99aa;
+  --section-color : #fc5130;
+}
 
 body {
   margin: 0;
-  background-color: #100012;
+  color : var(--text-color);
+  background-color: var(--main-bg-color);
   position: relative;
   min-height: 100vh;
 }
@@ -26,7 +34,7 @@ a:hover
 /* HomePage */
 
 .banner {
-  background-color: #201525;
+  background-color: var(--secondary-bg-color);
   align-items: center;
   position: relative;
   top: 50px;
@@ -35,7 +43,6 @@ a:hover
 }
 
 .bannerText {
-  color : #ffddee;
   text-align: center;
   letter-spacing: 40px;
   font-size: 60px;
@@ -53,7 +60,7 @@ a:hover
 .categoryCard {
   height: 300px;
   width: 240px;
-  background-color: #151220;
+  background-color: var(--secondary-bg-color);
   display: inline-block;
 }
 
@@ -68,14 +75,13 @@ a:hover
   margin-top: 12.5px;
   height: 24px;
   text-align: center;
-  color : #ffddee;
   font-size: 25px;
 }
 
 .categoryCardHover {
   height: 330px;
   width: 264px;
-  background-color: #151220;
+  background-color: var(--secondary-bg-color);
   display: inline-block;
 }
 
@@ -90,10 +96,170 @@ a:hover
   margin-top: 14.3px;
   height: 26.4px;
   text-align: center;
-  color : #ffddee;
   font-size: 26.4px;
 }
 
+
+/* About Me */
+
+.aboutMe {
+  padding-left: 4%;
+  padding-top: 60px;
+}
+
+.section {
+  width: 75%;
+  margin-bottom: 100px;
+}
+
+.sectionTitle {
+  width: 100%;
+  height: 50px;
+  border-style: solid;
+  border-width: 2px 0;
+  border-color: var(--section-color);
+  color: var(--section-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionContent {
+  position: relative;
+  width: 94%;
+  padding: 3%
+}
+
+.wia {
+  display: flex;
+}
+
+.wiaImg {
+  height: 300px;
+  width : 225px;
+  min-width: 225px;
+  background-color: orangered;
+}
+
+.wiaContent {
+  margin-left: 20px;
+  text-align: justify;  
+}
+
+.education {
+  display: flex;
+  width: 100%;
+  
+}
+
+.educationCard {
+  width: 50%;
+  height: 100%;
+  padding: 1% 2%;
+  text-align: center;
+  border-left: 1px solid var(--text-secondary);
+}
+
+@media screen and (max-width: 1100px) {
+  .education {
+    display: block;
+    width: 100%;
+    
+  }
+  
+  .educationCard {
+    width: 100%;
+    border-right: none !important;
+    border-left: none !important;
+    border-bottom: 1px solid var(--text-secondary);
+  }
+
+}
+
+.education > .educationCard + .educationCard {
+  border-right: 1px solid var(--text-secondary);
+}
+
+.schoolName{
+  margin:0;
+  
+}
+.schoolDate {
+  margin : 2px 0 0 0;
+  font-size : 0.8em;
+  color: var(--text-secondary);
+}
+
+.schoolDegree {
+  margin : 10px;
+  color: var(--text-secondary);
+}
+
+.schoolContent {
+  text-align: justify;
+}
+
+.hobbies {
+  display : flex;
+  flex-wrap: wrap;
+}
+
+.hobbyCard {
+  width: 17%;
+  min-width: 170px;
+  margin-right:5%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-width: 0px 1px;
+  border-color: var(--text-secondary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 10px 10px 6px 1px #0d0d0d;
+}
+
+.hobbyTitle {
+  text-align: center;
+  height : 40px;
+  color : var(--section-color)
+}
+
+.hobbyContent {
+  text-align: justify;
+}
+
+.knowledges {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.knowledgeCard {
+  width: 25%;
+  min-width: 170px;
+  margin-right:5%;
+  margin-bottom: 5%;
+  border-style: solid;
+  border-width: 0px 1px;
+  border-color: var(--text-secondary);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 10px 10px 6px 1px #0d0d0d;
+
+  text-align: center;
+}
+
+.knowledgeTitle {
+  margin: 0;
+}
+
+.knowledgeLevel {
+  margin : 2px 0 0 0;
+  font-size : 0.8em;
+  color: var(--text-secondary);
+}
+
+.knowledgeContent {
+  text-align: justify;
+}
 
 /* Navbar */
 
@@ -114,8 +280,40 @@ a:hover
 
 .navbarTitle h1 {
   margin : 0;
-  color : #ffddee;
   letter-spacing: 10px;
+}
+
+/* Navside */
+
+.navside {
+  width: 18%;
+  position: fixed;
+  right: 2%;
+  border-style: solid;
+  border-width: 0px;
+  border-left-width: 5px;
+  border-radius: 5px;
+  border-color: #201525;
+  padding: 2% 0 1% 0;
+}
+
+.navsideList {
+  height: 100%;
+  width: 100%;
+}
+
+.navsideElement {
+  display: flex;
+  height : 40px;
+  width : 60%;
+  padding-left: 20px;
+  align-items: center;
+  margin : 0 0 40px 0;
+  
+}
+
+.navsideElement:hover {
+  background-color: #302040;
 }
 
 /* Footer */
@@ -128,7 +326,11 @@ a:hover
   background-color: #201525;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
+}
+
+.footerMail {
+  margin-left: 40px;
 }
 
 .credit {

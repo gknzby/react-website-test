@@ -13,7 +13,8 @@ class Footer extends Component
 
         return(
             <div className = "footer">
-                <p className = "credit">This site created by Gökhan Özbey</p>
+                <span className = "footerMail">gokhanozbey7@gmail.com</span>
+                <a href = "https://www.gknzby.com"><span className = "credit">This site created by Gökhan Özbey</span></a>
             </div>
         );
     }
