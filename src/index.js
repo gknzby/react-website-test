@@ -15,7 +15,7 @@ class Root extends Component
   {
     super(props);
     this.state = {
-      page : <AboutMe changePage = {this.changePage}/>,
+      page : <Works changePage = {this.changePage}/>,
       navbar : <Navbar changePage = {this.changePage}/>,
     }
   }

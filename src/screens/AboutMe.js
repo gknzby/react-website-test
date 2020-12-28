@@ -90,7 +90,7 @@ export default function AboutMe(props)
     knowdledgeList.push(knowdledgeList[0]);
 
     return(
-        <div className = "aboutMe">
+        <div className = "pages">
             <NavSide list = {navsideList}/>
             <Section title = "Who Am I?" id = "whoIAm">
                 <WhoIAm />
