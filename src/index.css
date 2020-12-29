@@ -1,7 +1,7 @@
 /* General */
 :root{
-  --main-bg-color : #101018;
-  --secondary-bg-color : #201525;
+  --main-bg-color : #0b0c10;
+  --secondary-bg-color : #101020;
   --text-color : #ffddee;
   --text-secondary : #dd99aa;
   --section-color : #fc5130;
@@ -157,7 +157,7 @@ a:hover
 
 .banner {
   background-color: var(--secondary-bg-color);
-  align-items: center;
+  align-items: center;  
   position: relative;
   top: 50px;
   margin-bottom: 70px;
@@ -189,7 +189,14 @@ a:hover
 .categoryImage {
   width: 100%;
   height: 250px;
-  background-color: #201525;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryImage img {
+  width: 80%;
 }
 
 .categoryTitle {
@@ -210,7 +217,14 @@ a:hover
 .categoryImageHover{
   width: 100%;
   height: 275px;
-  background-color: #201525;
+  background-color: var(--secondary-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categoryImageHover img{
+  width: 80%;
 }
 
 .categoryTitleHover {
@@ -354,11 +368,20 @@ a:hover
   text-align: justify;
 }
 
+
+/* Contact */
+
+.myMail {
+  width: 92%;
+  text-align: center;
+}
+
+
 /* Navbar */
 
 .navbar {
   width: 100%;
-  background-color: #201525;
+  background-color: var(--secondary-bg-color);
   height: 50px;
   margin-top: 0px;
   display : flex;
@@ -465,7 +488,7 @@ a:hover
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background-color: #201525;
+  background-color: var(--secondary-bg-color);
   display: flex;
   align-items: center;
   justify-content: space-between;

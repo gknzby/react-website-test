@@ -40,6 +40,7 @@ class CategoriCard extends Component
 
     render()
     {
+        let imgSource = this.props.page + ".png";
 
 
         return(
@@ -48,7 +49,7 @@ class CategoriCard extends Component
                     onMouseOver = {this.mouseEnter}
                     onMouseOut = {this.mouseOut} >
                     <div className = {this.state.imageStyle}>
-
+                        <img src = {imgSource} alt = {this.props.title}/>
                     </div>
                     <h2 className = {this.state.titleStyle}>
                         {this.props.title}

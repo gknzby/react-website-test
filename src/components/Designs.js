@@ -61,11 +61,6 @@ function getDesignData()
         image : "logo512.png",
         content : "Wksdof sdfsf sDFfıds skfdosf sfsdfkosdf sdfsofs fsdfkopsdfks skfopsdfo sdfkıosd fjsdı fjsdıfsd jfsdıfjsdıfjsdı jfısd sdfdsfds fsdfsd fsdfsd fsd fsd fsd fds fqefwefwe fwefewfdweswfw efdsfafew",
     });
-    data.push({
-        title : "ESDOT Tanışma Kahvaltısı",
-        image : "logolupixelafis.jpg",
-        content : "fsdfsd fsd fsd fsd fds fqefwefwe fwefewfdweswfw efdsfafew Wksdof sdfsf sDFfıds skfdosf sfsdfkosdf sdfsofs fsdfkopsdfks skfopsdfo sdfkıosd fjsdı fjsdıfsd jfsdıfjsdıfjsdı jfısd sdfdsfds fsdfsd fsdfsd fsd fsd fsd fds fqefwefwe fwefewfdweswfw efdsfafew",
-    });
 
     return data;
 }
