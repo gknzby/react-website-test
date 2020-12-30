@@ -43,7 +43,6 @@ function DesignCard(props)
         <div className = "designCard" onClick = {handleClick}>
             <img src={props.image} alt = {props.title}/>
             <h3>{props.title}</h3>
-            <p>{props.content}</p>
         </div>
     );
 }
@@ -52,15 +51,21 @@ function getDesignData()
 {
     let data = [];
     data.push({
-        title : "React Logo",
-        image : "logo192.png",
+        title : "ESDOT Poster",
+        image : "designs/esdotPoster.png",
         content : "Wksdof sdfsf sDFfıds skfdosf sfsdfkosdf sdfsofs fsdfkopsdfks skfopsdfo sdfkıosd fjsdı fjsdıfsd jfsdıfjsdıfjsdı jfısd",
     });
     data.push({
-        title : "React Logo Big",
-        image : "logo512.png",
+        title : "ESDOT Breakfast",
+        image : "designs/esdotBreakfast.png",
         content : "Wksdof sdfsf sDFfıds skfdosf sfsdfkosdf sdfsofs fsdfkopsdfks skfopsdfo sdfkıosd fjsdı fjsdıfsd jfsdıfjsdıfjsdı jfısd sdfdsfds fsdfsd fsdfsd fsd fsd fsd fds fqefwefwe fwefewfdweswfw efdsfafew",
     });
+    data.push({
+        title : "ESOGU HAMER Hip-Hop",
+        image : "designs/esoguhamer.png",
+        content : "Wksdof sdfsf sDFfıds skfdosf sfsdfkosdf sdfsofs fsdfkopsdfks skfopsdfo sdfkıosd fjsdı fjsdıfsd jfsdıfjsdıfjsdı jfısd",
+    });
+
 
     return data;
 }

@@ -72,6 +72,8 @@ a:hover
   width: 100%;
   display: flex;
   padding: 10px 14px;
+
+  margin-bottom: 2%;
 }
 
 .workCard h3, p {
@@ -139,7 +141,7 @@ a:hover
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding : 20px 20px;
 
@@ -245,7 +247,10 @@ a:hover
   height: 300px;
   width : 225px;
   min-width: 225px;
-  background-color: orangered;
+}
+
+.wiaImg img {
+  width: 100%;
 }
 
 .wiaContent {
@@ -327,7 +332,7 @@ a:hover
 .hobbyTitle {
   text-align: center;
   height : 40px;
-  color : var(--section-color)
+  color : var(--text-color)
 }
 
 .hobbyContent {
@@ -468,6 +473,10 @@ a:hover
 
   background-color: var(--secondary-bg-color);
 
+}
+
+.popScreenContent img {
+  object-fit: contain;
 }
 
 

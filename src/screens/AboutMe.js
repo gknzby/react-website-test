@@ -12,11 +12,19 @@ function WhoIAm(props)
     return(
         <div className = "wia">
             <div className = "wiaImg">
-                <span>Image placeholder</span>
+                <img src = "myPhoto.png" alt = "My Photo"/>
             </div>
             <div className = "wiaContent">
                 <p>
-                    {loremIpsum}
+                I've loved problem solving for as long as I can remember. The harder a problem is, the more fun it has been for me to solve it. When I became an engineer, I took advantage of this. My favorite aspect of studying engineering is always the possibility that you may encounter a problem that you have never faced before.
+                <br/> <br/>
+                On the other hand, I do not agree with the prejudices about engineers being "asocial". I am a person who loves meeting new people and enjoys being in many different social environments. I have always been the person taking control of the group and managing the project in project groups at school.
+                <br/> <br/>
+                You can contact me at one of the addresses below to contact me on any subject. I am also open to people who are eager to learn and seek someone to consult.
+                <br/> <br/> <br/> <br/>
+                E-Mail : gokhanozbey7@gmail.com
+                <br/>
+                Linkedin : <a href = "https://www.linkedin.com/in/gknzby/" target = "_blank ">https://www.linkedin.com/in/gknzby/</a>
                 </p>
             </div>
         </div>
@@ -38,20 +46,20 @@ function EducationCard(props)
 
 function Education(props)
 {
-    let universityInfo = {
-        name : "My University Name",
-        department : "Computer Engineer",
-        degree : "Bachelor's Degree",
-        dates : "2015 - 2021",
-        content : loremIpsum,
-    }
-
     let highschoolInfo = {
-        name : "My Highschool Name",
+        name : "Antakya Anatolian High School ",
         department : "Natural Sciences",
         degree : "Highschool",
         dates : "2011 - 2015",
-        content : loremIpsum,
+        content : "I studied high school in Antakya's oldest high school. I studied natural sciences such as physics, biology and chemistry in high school.",
+    }
+
+    let universityInfo = {
+        name : "Eskişehir Osmangazi University",
+        department : "Computer Engineer",
+        degree : "Bachelor's Degree",
+        dates : "2015 - 2021",
+        content : "Here I learned not only programming but also how to become an engineer. The task of a computer engineer is not just to solve a problem, but to solve it in the best possible way. This requires not only better coding, but also a lot of teaching. I have learned these during my time here.",
     }
 
     return (
@@ -60,6 +68,62 @@ function Education(props)
             <EducationCard schoolInfo = {universityInfo}/>
         </div>
     );
+}
+
+function getHobbyList()
+{
+    let hobbyList = [];
+    hobbyList.push({
+        title : "Swimming", 
+        content : "",
+        });
+    hobbyList.push({
+        title : "Historical Europian Martial Arts", 
+        content : "",
+        });
+    hobbyList.push({
+        title : "Cycling", 
+        content : "",
+        });
+
+    return hobbyList;
+}
+
+function getKnowledgeList()
+{
+    let knowdledgeList = [];
+    knowdledgeList.push({
+        title : "Turkish", 
+        level : "Native", 
+        content : ""
+    });
+    knowdledgeList.push({
+        title : "English", 
+        level : "Advanced", 
+        content : ""
+    });
+    knowdledgeList.push({
+        title : "HTML/CSS", 
+        level : "Advanced", 
+        content : ""
+    });
+    knowdledgeList.push({
+        title : "JavaScript", 
+        level : "Advanced", 
+        content : ""
+    });
+    knowdledgeList.push({
+        title : "React", 
+        level : "Beginner-Advanced", 
+        content : ""
+    });
+    knowdledgeList.push({
+        title : "React-Native", 
+        level : "Beginner-Advanced", 
+        content : ""
+    });
+
+    return knowdledgeList;
 }
 
 export default function AboutMe(props)
@@ -72,22 +136,10 @@ export default function AboutMe(props)
     navsideList.push({title : "Hobbies", url : "hobbies"});
 
 
-    let hobbyList = [];
-    hobbyList.push({title : "Swimming", content : "I think swimming is the best exercise. Swimming is fun for me and at the same time very healty. I swim at every opportunity. (Actually not every but mostly)"});
-    hobbyList.push({title : "Historical Europian Martial Arts", content : "Sometimes you wanna swing a sword, you swings a sword. Yeah its true. And when you swings a sword, you feel like 'this should be a sport' and finds that sport and joins them"});
-    hobbyList.push({title : "Cycling", content : "Cycling is like cycling. You cycling and goes somewhere. Others cycling and goes somewhere too. I think my england is bad in this content but who cares. (definetly not me)"});
-    hobbyList.push(hobbyList[0]);
-    hobbyList.push(hobbyList[1]);
-    hobbyList.push(hobbyList[2]);
+    let hobbyList = getHobbyList();
 
-    let knowdledgeList = [];
-    knowdledgeList.push({title : "Turkish", level : "Native", content : "Turkish is my native language so I can't write about this so much."});
-    knowdledgeList.push({title : "English", level : "Advanced", content : "I'm very good at reading and writing but I'm bad at listening and speaking because I can't practice them in real life."});
-    knowdledgeList.push(knowdledgeList[0]);
-    knowdledgeList.push(knowdledgeList[1]);
-    knowdledgeList.push(knowdledgeList[1]);
-    knowdledgeList.push(knowdledgeList[1]);
-    knowdledgeList.push(knowdledgeList[0]);
+
+    let knowdledgeList = getKnowledgeList();
 
     return(
         <div className = "pages">
@@ -102,7 +154,7 @@ export default function AboutMe(props)
                 <Knowledges list = {knowdledgeList} />
             </Section>
             <Section title = "Career" id = "career">
-                
+                <p>Unfortunately I don't have any career experience at the moment. :(</p>
             </Section>
             <Section title = "Hobbies" id = "hobbies">
                 <Hobbies list = {hobbyList} />
